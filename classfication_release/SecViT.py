@@ -11,7 +11,6 @@ import torch.nn as nn
 from timm.models.layers import DropPath, trunc_normal_
 from timm.models.registry import register_model
 from timm.models.vision_transformer import _cfg
-from fvcore.nn import FlopCountAnalysis, flop_count_table
 import time
 from einops import rearrange, einsum
 from einops.layers.torch import Rearrange
