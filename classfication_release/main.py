@@ -16,9 +16,6 @@ from timm.scheduler import create_scheduler
 from timm.optim import create_optimizer
 from timm.utils import NativeScaler, get_state_dict, ModelEma
 
-from fvcore.nn import FlopCountAnalysis
-from fvcore.nn import flop_count_table
-
 from datasets import build_dataset
 from engine import train_one_epoch, evaluate
 from losses import DistillationLoss
@@ -258,9 +255,6 @@ def main(args):
     model = archs[args.model](args)
     
     print(model)
-    model.eval()
-    flops = FlopCountAnalysis(model, torch.rand(1, 3, args.input_size, args.input_size))
-    print(flop_count_table(flops))
 
     if args.finetune:
         checkpoint = torch.load(args.finetune, map_location='cpu')
