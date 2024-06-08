@@ -428,12 +428,3 @@ def SecViT_L(args):
     )
     model.default_cfg = _cfg()
     return model
-
-
-
-if __name__ == '__main__':
-    model = SecViT_T(None)
-    print(model)
-    input = torch.randn(1, 3, 224, 224)
-    flops = FlopCountAnalysis(model, input)
-    print(flop_count_table(flops))
