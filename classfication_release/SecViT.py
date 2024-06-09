@@ -296,7 +296,7 @@ class SecViT(nn.Module):
     def __init__(self, in_chans=3, num_classes=1000, 
                  embed_dims=[96, 192, 384, 768], depths=[2, 2, 6, 2], num_heads=[3, 6, 12, 24], 
                  num_clusterss=[[64, 49], [16, 49], [4, 49], [1, 1]], mlp_ratios=[3, 3, 3, 3], drop_path_rate=0.1, 
-                 projection=1024, layerscales=[False, False, False, False], layer_init_values=1e-6):
+                 layerscales=[False, False, False, False], layer_init_values=1e-6):
         super().__init__()
 
         self.num_classes = num_classes
