@@ -8,12 +8,12 @@ The Vision Transformer (ViT) has gained prominence for its superior relational m
 these insights, we introduce a fast and balanced clustering method, named Semantic Equitable Clustering (SEC). SEC clusters tokens based on their global semantic relevance in an efficient, straightforward manner. In contrast to traditional clustering methods requiring multiple iterations, our method achieves token clustering in a single pass. Additionally, SEC regulates the number of tokens per cluster, ensuring a balanced distribution for effective parallel processing on current computational platforms without necessitating further optimization. Capitalizing on SEC, we propose a versatile vision backbone, SecViT. Comprehensive experiments in image classification, object detection, instance segmentation, and semantic segmentation validate to the effectiveness of SecViT. Remarkably, SecViT attains an impressive 84.2% image classification accuracy with only 27M parameters and 4.4G FLOPs, without the need for for additional supervision or data.![SecViT](SecViT.png)
 
 ### Results
-|Model|Params|FLOPs|Acc|log|
-|:---:|:---:|:---:|:---:|:---:|
-|SecViT-T|15M|2.5G|82.6%|[SecViT-T(epoch298)](SecViT_log/SecViT-T.txt)|
-|SecViT-S|27M|4.4G|84.2%|[SecViT-S(epoch263)](SecViT_log/SecViT-S.txt)|
-|SecViT-B|55M|9.7G|85.0%|[SecViT-B(epoch242)](SecViT_log/SecViT-B.txt)|
-|SecViT-L|96M|18.1G|85.6%|[SecViT-L(epoch244)](SecViT_log/SecViT-L.txt)|
+|Model|Params|FLOPs|Acc|log|ckpt|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|SecViT-T|15M|2.5G|82.6%|[SecViT-T(epoch298)](SecViT_log/SecViT-T.txt)|[SecViT-T](https://pan.baidu.com/s/1DLAnq0Q_6v50vbs3w8cbrQ?pwd=56ez)|
+|SecViT-S|27M|4.4G|84.2%|[SecViT-S(epoch263)](SecViT_log/SecViT-S.txt)|[SecViT-S](https://pan.baidu.com/s/1oMaCsXFjsawy3vllV7zmwg?pwd=ga8j)|
+|SecViT-B|55M|9.7G|85.0%|[SecViT-B(epoch242)](SecViT_log/SecViT-B.txt)|[SecViT-B](https://pan.baidu.com/s/19By5MEvs7ej_t4JlXrMhWQ?pwd=vgv9)|
+|SecViT-L|96M|18.1G|85.6%|[SecViT-L(epoch244)](SecViT_log/SecViT-L.txt)|[SecViT-L](https://pan.baidu.com/s/1J3cckabSXPD-XUd3XHR7Lw?pwd=558b)|
 
 ## Citation
 
